@@ -1,0 +1,79 @@
+/* style.css - simple responsive styling */
+:root{
+  --bg:#f3f7fb;
+  --card:#ffffff;
+  --accent:#0366d6;
+  --muted:#6b7280;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,var(--bg),#e9f0fb 60%);
+  color:#111827;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+}
+.container{
+  width:100%;
+  max-width:520px;
+  background:transparent;
+}
+h1{
+  text-align:center;
+  margin:0 0 16px 0;
+  font-size:1.6rem;
+}
+.search{
+  display:flex;
+  gap:8px;
+  margin-bottom:16px;
+}
+.search input{
+  flex:1;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  font-size:1rem;
+}
+.search button{
+  padding:12px 14px;
+  border-radius:10px;
+  border:0;
+  background:var(--accent);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+.card{
+  background:var(--card);
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.08);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+}
+.location{font-weight:700;font-size:1.1rem}
+.weather-icon{width:100px;height:100px}
+.temp{font-size:2rem;font-weight:700}
+.desc{font-size:1rem;color:var(--muted);text-transform:capitalize}
+.extra{font-size:0.9rem;color:var(--muted)}
+.hidden{display:none}
+.error{
+  margin-top:12px;
+  padding:12px;
+  background:#fff3f2;
+  color:#9b1c1c;
+  border-radius:8px;
+  border:1px solid #ffdddd;
+}
+.footer{text-align:center;margin-top:14px;color:var(--muted);font-size:0.85rem;}
+@media (max-width:420px){
+  .weather-icon{width:80px;height:80px}
+  .temp{font-size:1.6rem}
+}

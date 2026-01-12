@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Weather App</h1>
+
+    <form id="searchForm" class="search">
+      <input id="cityInput" type="text" placeholder="Enter city name (e.g. London)" required />
+      <button id="submitBtn" type="submit">Submit</button>
+    </form>
+
+    <section id="result" class="result hidden" aria-live="polite">
+      <div class="card">
+        <div class="location" id="location"></div>
+        <img id="icon" alt="" class="weather-icon" />
+        <div class="temp" id="temperature"></div>
+        <div class="desc" id="description"></div>
+        <div class="extra" id="extra"></div>
+      </div>
+    </section>
+
+    <div id="error" class="error hidden"></div>
+
+    <footer class="footer">
+      <small>Powered by OpenWeatherMap — replace <code>YOUR_API_KEY_HERE</code> in <code>script.js</code> with your API key.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
