@@ -1,6 +1,6 @@
 // script.js - Weather App logic
 // IMPORTANT: Get an API key from https://openweathermap.org/ and replace the placeholder below
-const API_KEY = '0755a6b676df9511bcfc6fcf13cf2c49';
+const API_KEY = '';
 
 const form = document.getElementById('searchForm');
 const cityInput = document.getElementById('cityInput');
